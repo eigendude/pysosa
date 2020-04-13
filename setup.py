@@ -37,11 +37,10 @@ setuptools.setup(
         'Topic :: Scientific/Engineering :: Chemistry',
         'Topic :: Scientific/Engineering :: Physics',
     ],
-    packages=setuptools.find_packages(exclude=['test']),
-    package_data={
-        'sosa.ontology.resources': ['*'],
-    },
+    packages=setuptools.find_packages(exclude=['test', 'test.*']),
     install_requires=[
         'pyqudt',
+        'rdflib',
+        'rdflib-jsonld',
     ],
 )
