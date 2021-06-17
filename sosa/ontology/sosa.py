@@ -559,7 +559,7 @@ class SOSA:
     A FeatureOfInterest appears across three modules:
 
         * The thing whose property is being estimated or calculated in the
-          course of an Observation
+          course of an Observation, suitable for a database or interface table.
         * The thing whose property is being manipulated by an Actuator
         * The thing which is being sampled or transformed in an act of Sampling
 
@@ -798,8 +798,8 @@ class SOSA:
 
     PLATFORM = OntologyUtils.get_iri('sosa', 'Platform')
     """
-    A Platform is an entity that hosts other entities, particularly Sensors,
-    Actuators, Samplers, and other Platforms.
+    A Device is an entity that hosts other entities, particularly Sensors,
+    Actuators, Devices.
 
     Examples:
 
